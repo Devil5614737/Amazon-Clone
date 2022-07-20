@@ -1,0 +1,128 @@
+.cartContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  grid-column-gap: 15px;
+  padding: 2em;
+}
+
+.cartContainer .cartItemContainer {
+  background-color: white;
+  padding: 1em 2em;
+}
+
+.cartContainer .cartItemContainer .title {
+  font-weight: 500;
+  font-size: 2.4em;
+}
+
+.cartContainer .cartItemContainer .cartItem {
+  margin-top: 32px;
+}
+
+.cartContainer .cartItemContainer .cartItem .product {
+  margin-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cartContainer .cartItemContainer .cartItem .product .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cartContainer .cartItemContainer .cartItem .product .left .productInfo {
+  margin-top: 18px;
+  margin-left: 12px;
+}
+
+.cartContainer .cartItemContainer .cartItem .product .left .productInfo .title {
+  color: #0F1111;
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+.cartContainer .cartItemContainer .cartItem .product .left .productInfo .qty {
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cartContainer .cartItemContainer .cartItem .product .left .productInfo .qty label {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.cartContainer .cartItemContainer .cartItem .product .left .productInfo .qty button {
+  margin-left: 6px;
+  font-size: 2em;
+  border-radius: 100%;
+  width: 28px;
+  height: 28px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  border: none;
+  background-color: #E3E6E6;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cartContainer .cartItemContainer .cartItem .product .left .productInfo .qty .quantityCount {
+  font-size: 1.6em;
+  font-weight: 500;
+  color: black;
+}
+
+.cartContainer .cartItemContainer .cartItem .product .left .productInfo .qty p {
+  margin-left: 6px;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: #0087B8;
+}
+
+.cartContainer .cartItemContainer .cartItem .product .right p {
+  font-weight: bold;
+  font-size: 1.7em;
+}
+
+.cartContainer .cartSubtotal {
+  background-color: white;
+  padding: 5em 2em;
+  height: 200px;
+}
+
+.cartContainer .cartSubtotal p {
+  font-size: 1.8em;
+}
+
+.cartContainer .cartSubtotal p span {
+  font-weight: bold;
+}
+
+.cartContainer .cartSubtotal button {
+  margin-top: 12px;
+  width: 100%;
+  font-size: 1.4em;
+  font-weight: 500;
+  background-color: #FFD814;
+  border: none;
+  border-radius: 5px;
+  padding: .4em 0;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Cart.module.css.map */

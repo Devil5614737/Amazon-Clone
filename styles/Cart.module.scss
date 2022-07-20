@@ -1,0 +1,109 @@
+@import 'variables';
+
+.cartContainer {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column-gap: 15px;
+  padding: 2em;
+  .cartItemContainer {
+    background-color: white;
+    padding: 1em 2em;
+    .title {
+      font-weight: 500;
+      font-size: 2.4em;
+    }
+    .cartItem{
+        margin-top: 32px;
+       .product{
+        margin-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        .left{
+        display: flex;
+        
+
+            .productImage{
+
+            }
+            .productInfo{
+                margin-top: 18px;
+                margin-left: 12px;
+                .title{
+                    // max-width: 70%;
+                    color: #0F1111;
+                    font-size: 1.6em;
+                    font-weight: 500;
+                }
+                .qty{
+                    
+                    margin-top: 12px;
+
+                    
+                    display: flex;
+                    align-items: center;
+                    label{
+                        font-size: 1.5em;
+                        font-weight: 500;
+                    }
+                   button{
+                    margin-left:6px;
+                    font-size: 2em;
+                    border-radius: 100%;
+                    width: 28px;
+                    height: 28px;
+                    display: grid;
+                    place-items: center;
+                    align-items: center;
+                    cursor: pointer;
+                    border: none;
+                    background-color: #E3E6E6;
+                    box-shadow: 4px 4px 10px rgba(0,0,0,.1);
+                   }
+                   .quantityCount{
+                    font-size: 1.6em;
+                    font-weight: 500;
+                    color: black;
+                   }
+                    p{
+                        margin-left: 6px;
+                        font-size: 1.2em;
+                        cursor: pointer;
+                        color: #0087B8;
+                      
+
+                    }
+                }
+            }
+        }
+        .right{
+            p{
+                font-weight: bold;
+                font-size: 1.7em;
+            }
+        }
+       } 
+    }
+  }
+  .cartSubtotal {
+    background-color: white;
+    padding: 5em 2em;
+    height: 200px;
+    p{
+        font-size: 1.8em;
+   span{
+font-weight: bold;
+   }
+    }
+    button{
+        margin-top: 12px;
+        width: 100%;
+        font-size: 1.4em;
+        font-weight: 500;
+        background-color: map-get($Button_Colors, 'yellow' );
+        border: none;
+        border-radius: 5px;
+        padding: .4em 0;
+        cursor: pointer;
+    }
+  }
+}

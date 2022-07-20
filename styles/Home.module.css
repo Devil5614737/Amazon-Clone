@@ -1,0 +1,247 @@
+.nav {
+  background-color: #131921;
+}
+
+.nav .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .7em 2em;
+}
+
+.nav .wrapper .searchBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid black;
+  width: 664px;
+  height: 40px;
+}
+
+.nav .wrapper .searchBox .all {
+  padding: 1em 1.7em;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #DADADA;
+}
+
+.nav .wrapper .searchBox .all p {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.nav .wrapper .searchBox input {
+  width: 90%;
+  font-size: 1.4em;
+  padding: 0 0.4em;
+}
+
+.nav .wrapper .searchBox input:focus {
+  outline: none;
+}
+
+.nav .wrapper .searchBox .searchIcon {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  cursor: pointer;
+  background-color: #F3A847;
+}
+
+.nav .wrapper .text {
+  font-weight: bold;
+  font-size: 1.3em;
+  color: white;
+  cursor: pointer;
+}
+
+.nav .wrapper .text:hover {
+  border: 1px solid white;
+}
+
+.nav .wrapper .text:hover #logout {
+  display: none;
+}
+
+.nav .wrapper .text span {
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.nav .wrapper .text2 {
+  font-weight: bold;
+  font-size: 1.3em;
+  color: white;
+  cursor: pointer;
+}
+
+.nav .wrapper .text2:hover {
+  border: 1px solid white;
+}
+
+.nav .wrapper .text2 span {
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.nav .wrapper .cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav .wrapper .cart:hover {
+  border: 1px solid white;
+}
+
+.nav .wrapper .cart .title {
+  font-size: 1.4em;
+  color: white;
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+.nav .wrapper .cart .count {
+  position: absolute;
+  font-size: 1.5em;
+  color: #f08804;
+  top: 0;
+  font-weight: 500;
+  left: 16px;
+}
+
+.card {
+  width: 100%;
+  padding: 1em 1em;
+  position: relative;
+  z-index: 321;
+  cursor: pointer;
+  background-color: white;
+}
+
+.card .productInfo {
+  text-align: center;
+}
+
+.card .productInfo .productName {
+  font-size: 1.2em;
+}
+
+.card .productInfo .productPrice {
+  font-size: 1.4em;
+  color: #B12704;
+  font-weight: 500;
+}
+
+.imageContainer {
+  position: absolute;
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-duration: 14s;
+          animation-duration: 14s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+  -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+          animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-direction: reverse;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  width: 100vw;
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img18/Fresh/GW/2022/Hero/Jul/19th_HUB_Jul_GW_Hero_PC2x._CB631704423_.jpg");
+  }
+  25% {
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/katariy/GW/BAU/OP10R/updated_logo/D43000892_WLD_OnePlus_Pickle_NewLaunch_Tall_Hero_3000x1200._CB632949981_.jpg");
+  }
+  50% {
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/July/UrbnXUmran/GW/D50727061_WLA_urbn_x_umran_Launch_tallhero_3000x1200._CB631754940_.jpg");
+  }
+  75% {
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/realme/narzo50series/Launch/D45041229_Tall_Hero_3000x1200_A_50Pro._CB633840825_.jpg");
+  }
+  100% {
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img19/Pets/April-22/DesktopTallhero_3000x1200_2._CB623843558_.jpg");
+  }
+}
+
+@keyframes slide {
+  0% {
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img18/Fresh/GW/2022/Hero/Jul/19th_HUB_Jul_GW_Hero_PC2x._CB631704423_.jpg");
+  }
+  25% {
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/katariy/GW/BAU/OP10R/updated_logo/D43000892_WLD_OnePlus_Pickle_NewLaunch_Tall_Hero_3000x1200._CB632949981_.jpg");
+  }
+  50% {
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/July/UrbnXUmran/GW/D50727061_WLA_urbn_x_umran_Launch_tallhero_3000x1200._CB631754940_.jpg");
+  }
+  75% {
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/realme/narzo50series/Launch/D45041229_Tall_Hero_3000x1200_A_50Pro._CB633840825_.jpg");
+  }
+  100% {
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img19/Pets/April-22/DesktopTallhero_3000x1200_2._CB623843558_.jpg");
+  }
+}
+
+.main {
+  padding: 2em;
+  margin-top: 212px;
+}
+
+.main .wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 12px 12px;
+}
+
+@media screen and (max-width: 900px) {
+  .main .wrapper {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main .wrapper {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main .wrapper {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main .wrapper {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+/*# sourceMappingURL=Home.module.css.map */
